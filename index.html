@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajapakshe Clothing | Premium Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">RAJAPAKSHE</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="shop.html?category=men">Men</a></li>
+                <li><a href="shop.html?category=women">Women</a></li>
+                <li><a href="shop.html?category=kids">Kids</a></li>
+                <li><a href="shop.html?category=accessories">Accessories</a></li>
+                <li><a href="shop.html">Shop All</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+                <a href="cart.html" class="icon-btn cart-icon" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-bar" id="searchBar">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="menu-close" id="menuClose">&times;</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=kids">Kids</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-eyebrow">SPRING / SUMMER 2026</span>
+            <h1 class="hero-title">The Golden<br>Hour Collection</h1>
+            <p class="hero-description">A collection designed for the moments when light meets elegance. Discover pieces that move with you, crafted with intention and designed to last.</p>
+            <a href="shop.html" class="btn btn-primary">Explore Collection</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-banner.jpg" alt="Rajapakshe Clothing Spring Summer 2026 Collection">
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Curated For You</h2>
+                    <p class="section-subtitle">Handpicked essentials from our latest collection</p>
+                </div>
+                <a href="shop.html" class="btn btn-outline">View All</a>
+            </div>
+            <div class="product-grid" id="featuredProducts"></div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Find your perfect look</p>
+            </div>
+            <div class="category-grid">
+                <a href="shop.html?category=men" class="category-card category-large">
+                    <img src="images/cat-men.jpg" alt="Men's Collection">
+                    <div class="category-overlay">
+                        <h3>Men's Collection</h3>
+                        <span class="category-link">Explore &rarr;</span>
+                    </div>
+                </a>
+                <div class="category-right">
+                    <a href="shop.html?category=women" class="category-card">
+                        <img src="images/cat-women.jpg" alt="Women's Collection">
+                        <div class="category-overlay">
+                            <h3>Women's Collection</h3>
+                            <span class="category-link">Explore &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="shop.html?category=accessories" class="category-card">
+                        <img src="images/cat-accessories.jpg" alt="Accessories">
+                        <div class="category-overlay">
+                            <h3>Accessories</h3>
+                            <span class="category-link">Explore &rarr;</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image">
+                    <img src="images/cat-kids.jpg" alt="Rajapakshe Clothing craftsmanship">
+                </div>
+                <div class="story-content">
+                    <span class="eyebrow">OUR PHILOSOPHY</span>
+                    <h2 class="section-title">Where Quality Meets Intention</h2>
+                    <p>Every piece in our collection is thoughtfully designed and ethically crafted. We believe in clothing that lasts &mdash; in both quality and style. From the sourcing of our materials to the final stitch, we prioritize sustainability without compromising on elegance.</p>
+                    <a href="shop.html" class="story-link">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <span class="promo-tag">Limited Time Offer</span>
+                <h2 class="promo-title">Summer Sale</h2>
+                <p class="promo-text">Up to 40% off on selected items. Refresh your wardrobe with our summer essentials.</p>
+                <a href="shop.html" class="btn btn-primary">Shop the Sale</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Inner Circle</h2>
+                <p>Be the first to know about new arrivals, exclusive offers, and styling inspiration.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-accent">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">RAJAPAKSHE</h3>
+                    <p class="footer-tagline">Clothing with intention.</p>
+                    <p class="footer-address">123 Fashion Avenue<br>Colombo, Sri Lanka</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html?category=men">Men</a></li>
+                        <li><a href="shop.html?category=women">Women</a></li>
+                        <li><a href="shop.html?category=kids">Kids</a></li>
+                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rajapakshe Clothing. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
